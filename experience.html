@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alexander Elias — Portfolio</title>
+  <meta name="description" content="Alexander Elias — personal website, work, experience, and projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <aside class="rail">
+    <div class="rail-top">
+      <a class="brand" href="#home" aria-label="Home">
+        <div class="brand-dot"></div>
+        <div class="brand-text">
+          <div class="brand-name">Alexander Elias</div>
+          <div class="brand-sub">Marketing • Strategy • Build</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link is-active" href="#home" data-section="home">Home</a>
+        <a class="nav-link" href="#experience" data-section="experience">Experience</a>
+        <a class="nav-link" href="#projects" data-section="projects">Projects</a>
+        <a class="nav-link" href="#skills" data-section="skills">Skills</a>
+        <a class="nav-link" href="#contact" data-section="contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="rail-bottom">
+      <div class="pill">
+        <span class="pill-dot"></span>
+        Available for opportunities
+      </div>
+
+      <div class="rail-actions">
+        <a class="btn btn-ghost" href="mailto:you@email.com">Email</a>
+        <a class="btn" href="#" onclick="alert('Hook this to your resume PDF'); return false;">Resume</a>
+      </div>
+
+      <div class="rail-foot">
+        <a class="tiny" href="#" onclick="navigator.clipboard.writeText(window.location.href); this.textContent='Copied link ✓'; setTimeout(()=>this.textContent='Copy link',1200); return false;">Copy link</a>
+        <span class="tiny">•</span>
+        <span class="tiny">Toronto</span>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <!-- HOME -->
+    <section id="home" class="section">
+      <div class="container">
+        <div class="hero">
+          <div class="kicker">Personal Website</div>
+          <h1 class="h1">
+            Built with <span class="accent">taste</span>.<br />
+            Optimized for <span class="accent">results</span>.
+          </h1>
+          <p class="lead">
+            I’m Alexander — I build brands, content systems, and growth experiments. Clean execution, measurable outcomes.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#experience">View experience</a>
+            <a class="btn btn-ghost" href="#projects">See projects</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat card">
+              <div class="stat-num">3</div>
+              <div class="stat-label">Brands built</div>
+            </div>
+            <div class="stat card">
+              <div class="stat-num">2026</div>
+              <div class="stat-label">Fragrance launch</div>
+            </div>
+            <div class="stat card">
+              <div class="stat-num">Toronto</div>
+              <div class="stat-label">Based in Canada</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Experience</h2>
+          <p class="muted">A timeline of roles, impact, and what I actually shipped.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="t-item card">
+            <div class="t-meta">
+              <div class="t-role">Founder • Parfums de Elias</div>
+              <div class="t-date">2024 — Present</div>
+            </div>
+            <div class="t-body">
+              <p class="t-desc">
+                Built a fragrance house brand system: product story, packaging direction, website, and launch plan.
+              </p>
+              <ul class="bullets">
+                <li>Positioning: “quietly expensive” → modern heritage</li>
+                <li>Built landing + collection pages, email capture, and drops flow</li>
+                <li>Designed product naming + release cadence (Nautique, Casanova, etc.)</li>
+              </ul>
+              <div class="chips">
+                <span class="chip">Brand</span>
+                <span class="chip">Web</span>
+                <span class="chip">Creative Direction</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="t-item card">
+            <div class="t-meta">
+              <div class="t-role">Marketing / Growth Projects</div>
+              <div class="t-date">2023 — Present</div>
+            </div>
+            <div class="t-body">
+              <p class="t-desc">
+                Content systems, ad creative strategy, and conversion improvements for small brands.
+              </p>
+              <ul class="bullets">
+                <li>Shot + edited short-form content with a consistent visual standard</li>
+                <li>Built offer + landing page structure to improve clarity and conversion</li>
+                <li>Created repeatable posting + engagement workflows</li>
+              </ul>
+              <div class="chips">
+                <span class="chip">Content</span>
+                <span class="chip">CRO</span>
+                <span class="chip">Social</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="t-item card">
+            <div class="t-meta">
+              <div class="t-role">BCom Global Management • TMU</div>
+              <div class="t-date">2021 — 2025</div>
+            </div>
+            <div class="t-body">
+              <p class="t-desc">
+                International Business with hands-on projects (forecasting, strategy, analytics). Erasmus exchange in Barcelona.
+              </p>
+              <div class="chips">
+                <span class="chip">Strategy</span>
+                <span class="chip">Analytics</span>
+                <span class="chip">International</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Projects</h2>
+          <p class="muted">A few builds I’m proud of.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card proj">
+            <div class="proj-top">
+              <div class="proj-title">Parfums de Elias Website</div>
+              <div class="proj-tag">Web</div>
+            </div>
+            <p class="proj-desc">Premium brand site with collection pages, inquiry flow, and email capture.</p>
+            <div class="proj-actions">
+              <a class="btn btn-ghost" href="#" onclick="alert('Add your live link'); return false;">Live</a>
+              <a class="btn btn-ghost" href="#" onclick="alert('Add your GitHub link'); return false;">Code</a>
+            </div>
+          </article>
+
+          <article class="card proj">
+            <div class="proj-top">
+              <div class="proj-title">Content System</div>
+              <div class="proj-tag">Growth</div>
+            </div>
+            <p class="proj-desc">Repeatable content templates + shooting workflow for consistent weekly output.</p>
+            <div class="proj-actions">
+              <a class="btn btn-ghost" href="#contact">Request deck</a>
+            </div>
+          </article>
+
+          <article class="card proj">
+            <div class="proj-top">
+              <div class="proj-title">Brand Identity Kit</div>
+              <div class="proj-tag">Design</div>
+            </div>
+            <p class="proj-desc">Naming, tone, color system, type scale, and packaging direction.</p>
+            <div class="proj-actions">
+              <a class="btn btn-ghost" href="#contact">Inquire</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Skills</h2>
+          <p class="muted">Strong taste + execution. The combo that matters.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3 class="h3">Core</h3>
+            <div class="skill-list">
+              <div class="skill"><span>Brand strategy</span><span class="muted">Positioning • Offer</span></div>
+              <div class="skill"><span>Content</span><span class="muted">Short-form • Scripts</span></div>
+              <div class="skill"><span>Web</span><span class="muted">HTML/CSS • Landing pages</span></div>
+              <div class="skill"><span>CRO</span><span class="muted">Clarity • UX</span></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Tools</h3>
+            <div class="skill-list">
+              <div class="skill"><span>Figma / Canva</span><span class="muted">Design</span></div>
+              <div class="skill"><span>GA4 / Analytics</span><span class="muted">Measurement</span></div>
+              <div class="skill"><span>Shopify</span><span class="muted">Ecom</span></div>
+              <div class="skill"><span>CapCut / Premiere</span><span class="muted">Editing</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Contact</h2>
+          <p class="muted">If you want premium execution: send the brief.</p>
+        </div>
+
+        <div class="card contact">
+          <div>
+            <div class="contact-title">Let’s talk.</div>
+            <div class="muted">Email works best. I respond fast when it’s clear.</div>
+          </div>
+          <div class="contact-actions">
+            <a class="btn" href="mailto:you@email.com">you@email.com</a>
+            <a class="btn btn-ghost" href="#" onclick="alert('Add your LinkedIn URL'); return false;">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="footer muted">© <span id="year"></span> Alexander Elias</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
