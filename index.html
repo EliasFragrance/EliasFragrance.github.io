@@ -1,131 +1,113 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon.png">
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alexander Elias — Portfolio</title>
-  <meta name="description" content="Alexander Elias — Business, Marketing, and Digital Growth." />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alexander Elias</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" data-nav aria-label="Home">
-      <span class="brand-mark"></span>
-      <span>Alexander Elias</span>
-    </a>
+<body class="home">
+  <!-- HERO -->
+  <main class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
 
-    <nav class="nav">
-      <a href="about.html" data-nav="about">About</a>
-      <a href="work.html" data-nav="work">Work</a>
-      <a href="projects.html" data-nav="projects">Projects</a>
-      <a href="resume.html" data-nav="resume">Resume</a>
-      <a class="btn btn-ghost" href="contact.html" data-nav="contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-  <section class="hero">
-    <div>
-      <div class="kicker"><span class="dot"></span> Business & Marketing • Data-driven growth</div>
-      <h1>Build momentum with sharp strategy and clean execution.</h1>
-      <p class="lead">
-        I’m Alexander Elias — I help brands and teams grow through positioning, performance marketing thinking,
-        and modern digital systems. This site is a snapshot of my work, projects, and background.
-      </p>
-
-      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:16px;">
-        <a class="btn" href="work.html">View work</a>
-        <a class="btn btn-ghost" href="projects.html">See projects</a>
-      </div>
-
-      <div class="pill-row">
-        <span class="pill">Strategy</span>
-        <span class="pill">CRO / Analytics</span>
-        <span class="pill">Brand & Content</span>
-        <span class="pill">Web & Systems</span>
-      </div>
-    </div>
-
-    <aside class="card pad">
-      <div class="section-title">
-        <h2>Quick stats</h2>
-        <span class="small">Updated 2025</span>
-      </div>
-      <div class="list">
-        <div class="item">
-          <h3>Focus</h3>
-          <p>Business + marketing strategy, digital growth, and execution.</p>
+    <div class="hero-inner">
+      <!-- LEFT: headline + supporting copy -->
+      <section class="hero-left">
+        <div class="hero-kicker">
+          <span class="kicker-dot"></span>
+          <span>Business • Strategy • Growth</span>
         </div>
-        <div class="item">
-          <h3>Location</h3>
-          <p>Toronto, Ontario (open to Canada + remote).</p>
-        </div>
-        <div class="item">
-          <h3>Currently</h3>
-          <p>Final-year International Business student (TMU) + building ventures.</p>
-        </div>
-      </div>
-    </aside>
-  </section>
 
-  <section class="grid">
-    <div class="col-8 card pad">
-      <div class="section-title">
-        <h2>Featured work</h2>
-        <a class="small" href="work.html">All work →</a>
-      </div>
-      <div class="list">
-        <div class="item">
-          <h3>Case Study Title — Growth Outcome</h3>
-          <p>One paragraph describing the challenge, what you did, and the measurable result.</p>
-          <div class="meta">
-            <span>Role: Strategy / Execution</span>
-            <span>•</span>
-            <span>Tools: GA4, Ads, Web</span>
+        <h1 class="hero-title">
+          Build with <span class="accent">clarity</span>.<br />
+          Win with <span class="accent">strategy</span>.
+        </h1>
+
+        <p class="hero-sub">
+          I help brands and teams turn ambiguous problems into focused plans —
+          positioning, go-to-market, and performance.
+        </p>
+
+        <blockquote class="hero-quote">
+          <p>“Simplicity is the ultimate sophistication.”</p>
+          <cite>— Leonardo da Vinci</cite>
+        </blockquote>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="projects.html">View Projects</a>
+          <a class="btn ghost" href="contact.html">Contact</a>
+        </div>
+      </section>
+
+      <!-- RIGHT: profile card -->
+      <aside class="hero-card" aria-label="Profile summary">
+        <div class="card-top">
+          <div class="avatar" aria-hidden="true">
+            <!-- Option A: your monogram image -->
+            <img src="assets/AE_mark.png" alt="" />
+          </div>
+
+          <div class="card-id">
+            <div class="name-row">
+              <h2 class="card-name">Alexander Elias</h2>
+              <a class="card-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer"
+                aria-label="LinkedIn">
+                in
+              </a>
+            </div>
+            <p class="card-role">Business Strategy • Brand Growth</p>
           </div>
         </div>
-        <div class="item">
-          <h3>Case Study Title — System Improvement</h3>
-          <p>Short description of the project and what changed (conversion, retention, clarity).</p>
-          <div class="meta">
-            <span>Role: Analytics</span>
-            <span>•</span>
-            <span>Outcome: +X%</span>
+
+        <div class="card-divider"></div>
+
+        <div class="card-section">
+          <p class="card-label">Focus Areas</p>
+          <ul class="tags">
+            <li>Go-to-market</li>
+            <li>Positioning</li>
+            <li>Growth Strategy</li>
+            <li>Analytics</li>
+          </ul>
+        </div>
+
+        <div class="card-section">
+          <p class="card-label">Highlights</p>
+
+          <div class="metric">
+            <div class="metric-head">
+              <span>Strategy & Execution</span>
+              <span class="metric-val">A+</span>
+            </div>
+            <div class="bar"><span style="width: 92%"></span></div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-head">
+              <span>Brand & Messaging</span>
+              <span class="metric-val">A</span>
+            </div>
+            <div class="bar"><span style="width: 86%"></span></div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-head">
+              <span>Data & Insight</span>
+              <span class="metric-val">A</span>
+            </div>
+            <div class="bar"><span style="width: 84%"></span></div>
           </div>
         </div>
-      </div>
+
+        <div class="card-footer">
+          <a class="btn small" href="assets/Alexander_Elias_CV.pdf" download>Download CV</a>
+          <a class="btn small ghost" href="about.html">About Me</a>
+        </div>
+      </aside>
     </div>
-
-    <div class="col-4 card pad">
-      <div class="section-title">
-        <h2>Contact</h2>
-        <a class="small" href="contact.html">Let’s talk →</a>
-      </div>
-      <p class="small" style="margin-top:8px;">
-        Fastest way: email with what you’re building + what outcome you want.
-      </p>
-      <div class="hr"></div>
-      <p class="small"><strong>Email:</strong> alexander.elias.work@gmail.com</p>
-      <p class="small"><strong>Site:</strong> alexanderelias.ca</p>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
-    <span>© <span id="y"></span> Alexander Elias</span>
-    <span>
-      <a href="resume.html">Resume</a> • <a href="contact.html">Contact</a>
-    </span>
-  </div>
-</footer>
-
-<script src="assets/js/main.js"></script>
-<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  </main>
 </body>
 </html>
