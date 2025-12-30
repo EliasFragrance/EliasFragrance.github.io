@@ -87,23 +87,6 @@ body{
 }
 
 /* =========================
-   ROOT VARIABLES
-========================= */
-:root {
-  --cream: #F7F5F2;
-  --charcoal: #1F1F1F;
-}
-
-/* =========================
-   BASE / RESET
-========================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* =========================
    GLOBAL BACKGROUND (ADD HERE)
 ========================= */
 html, body {
@@ -112,7 +95,7 @@ html, body {
 
 body {
   background-color: var(--cream);
-  background-image: url("assets/img/architecture-light.jpg");
+  background-image: url("assets/img/background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
