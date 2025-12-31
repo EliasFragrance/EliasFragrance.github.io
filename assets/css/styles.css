@@ -125,7 +125,7 @@ button:focus-visible{
 }
 
 .nav a:hover{
-  color: rgba(247,245,242,0.78);
+  color: var(--accent); /* tasteful red */
 }
 
 /* Active underline */
