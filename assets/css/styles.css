@@ -97,15 +97,15 @@ button:focus-visible{
   gap: 20px;
 }
 
-/* ===== HEADER ALIGNMENT FIX ===== */
+/* ===== LOGO LEFT & LARGE ===== */
 .brand{
   display: flex;
-  align-items: center;   /* hard-aligns logo to nav text */
-  height: 100%;
+  align-items: center;
+  margin-right: 40px; /* space between logo and nav */
 }
 
 .brand img{
-  height: 28px;          /* match text cap-height vibe */
+  height: 46px;       /* LARGE but tasteful */
   width: auto;
   display: block;
 }
