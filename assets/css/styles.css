@@ -117,7 +117,7 @@ button:focus-visible{
   justify-content: space-between;        /* spreads items evenly */
   align-items: center;
 
-  font-family: "Playfair Display", "Libre Baskerville", serif;
+  font-family: "Playfair Display", "Libre Baskerville", Times New Roman;
   font-size: 17px;
   letter-spacing: 0.34em;
   text-transform: uppercase;
