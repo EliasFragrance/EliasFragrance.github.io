@@ -40,7 +40,7 @@ body{
 
   /* Background */
   background-color: var(--cream);
-  background-image: url("assets/img/background.png"); /* use relative path for GitHub Pages */
+  background-image: url("/assets/img/background.png"); /* use relative path for GitHub Pages */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -270,7 +270,7 @@ button:focus-visible{
   border-radius: 999px;
   margin: 0 auto 14px;
 
-  background: url("assets/img/avatar.png") center / cover no-repeat;
+  background: url("/assets/img/avatar.png") center / cover no-repeat;
   border: 1px solid rgba(255,255,255,0.14);
 }
 
