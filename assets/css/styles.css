@@ -434,4 +434,39 @@ button:focus-visible{
   .hero-subtitle{ font-size: 18px; }
 }
 
+/* =========================
+   Mobile header polish
+   Centered nav + larger logo
+   ========================= */
+
+@media (max-width: 620px){
+
+  /* Center everything cleanly */
+  .header-inner{
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Slightly larger, more confident logo */
+  .brand img{
+    height: 38px;          /* was ~32px */
+  }
+
+  /* Nav truly centered */
+  .nav{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav a{
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px){
+  .brand img{
+    height: 36px;
+  }
+}
 
