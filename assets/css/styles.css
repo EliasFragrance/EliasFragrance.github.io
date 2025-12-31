@@ -195,7 +195,7 @@ button:focus-visible{
   padding: 12px 16px;
   border-radius: 0px;
   border: 1px solid var(--glass-border);
- 
+  background: var(--glass-fill);
    
   color: var(--cream);
 
