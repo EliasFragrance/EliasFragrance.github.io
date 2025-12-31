@@ -437,3 +437,15 @@ button:focus-visible{
 @media (max-width: 420px){
   .brand img{ height: 36px; }
 }
+
+/* Mobile nav: slightly smaller so it fits one line */
+@media (max-width: 620px){
+  .nav{
+    font-size: 12.5px;      /* was ~14px */
+    letter-spacing: 0.10em; /* tighten tracking */
+  }
+
+  .nav a{
+    padding: 8px 6px;       /* tighter hitbox */
+  }
+}
