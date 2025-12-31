@@ -351,14 +351,6 @@ button:focus-visible{
 .card-link{ color: rgba(247,245,242,.86); }
 .card-link:hover{ color: var(--accent); }
 
-/* ---------- Footer (optional) ---------- */
-.site-footer{
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 18px var(--page-pad-x) 26px;
-  color: rgba(31,31,31,0.6);
-  font-size: 14px;
-}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px){
