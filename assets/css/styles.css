@@ -234,97 +234,144 @@ button:focus-visible{
   border-color: rgba(255,255,255,0.45);
 }
 
-/* ---------- Hero card ---------- */
+/* ---------- Hero card (upgraded) ---------- */
 .hero-card{
-  background: var(--charcoal);
-  border: 1px solid rgba(255,255,255,0.12);
+  background:
+    radial-gradient(1200px 500px at 20% -10%, rgba(255,255,255,0.10), transparent 55%),
+    radial-gradient(900px 500px at 110% 10%, rgba(255,255,255,0.06), transparent 55%),
+    var(--charcoal);
+  border: 1px solid rgba(255,255,255,0.14);
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: 0 30px 80px rgba(0,0,0,.45);
+
+  /* richer depth */
+  box-shadow:
+    0 30px 80px rgba(0,0,0,.45),
+    0 1px 0 rgba(255,255,255,.06) inset;
   font-family: "Times New Roman", Times, serif;
+
+  transform: translateZ(0);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
 }
 
-.card-top{
-  padding: 22px 22px 16px;
+.hero-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.20);
+  box-shadow:
+    0 40px 110px rgba(0,0,0,.55),
+    0 1px 0 rgba(255,255,255,.07) inset;
+}
 
+/* Top area looks more “glass card” */
+.card-top{
+  padding: 24px 22px 16px;
   text-align: center;
-   background: rgba(0,0,0,0.35);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.42),
+    rgba(0,0,0,0.22)
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.10);
 }
 
 .avatar{
-  width: 86px;
-  height: 86px;
+  width: 88px;
+  height: 88px;
   border-radius: 999px;
   margin: 0 auto 14px;
 
   background: url("/assets/img/avatar.png") center / cover no-repeat;
-  border: 1px solid rgba(255,255,255,0.14);
+
+  /* “medallion” feel */
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow:
+    0 10px 28px rgba(0,0,0,.55),
+    0 0 0 4px rgba(255,255,255,.05);
 }
 
 .card-name{
   font-weight: 700;
   font-size: 30px;
   letter-spacing: .2px;
+  line-height: 1.05;
 }
 
 .card-role{
   margin-top: 6px;
-  font-size: 18px;
-  color: rgba(247,245,242,.75);
+  font-size: 17px;
+  letter-spacing: .2px;
+  color: rgba(247,245,242,.78);
 }
 
 .card-actions{
   display: flex;
   gap: 10px;
   justify-content: center;
-  padding: 14px 18px 6px;
+  padding: 14px 18px 8px;
   flex-wrap: wrap;
 }
 
-.card-section{ padding: 16px 22px 18px; }
+/* Slightly tighter section spacing + cleaner typography */
+.card-section{ padding: 16px 22px 20px; }
 
 .card-section-title{
   font-size: 12px;
-  letter-spacing: .18em;
+  letter-spacing: .20em;
   text-transform: uppercase;
   color: rgba(247,245,242,.68);
   margin: 0 0 14px;
 }
 
+/* Meters feel higher-end */
 .meter{ margin-bottom: 14px; }
 
 .meter-label{
   font-size: 14px;
-  color: rgba(247,245,242,.85);
+  color: rgba(247,245,242,.88);
   margin-bottom: 8px;
 }
 
 .meter-bar{
   height: 10px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.12);
   overflow: hidden;
+  box-shadow: 0 1px 0 rgba(255,255,255,.06) inset;
 }
 
+/* Use accent instead of hardcoded red + add a subtle shine */
 .meter-bar span{
   display: block;
   height: 100%;
   width: 50%;
-  background: rgba(179,58,58,0.90);
   border-radius: 999px;
+
+  background:
+    linear-gradient(to bottom, rgba(255,255,255,0.22), rgba(255,255,255,0.00)),
+    color-mix(in srgb, var(--accent) 92%, transparent);
+  box-shadow: 0 0 14px rgba(0,0,0,.25);
 }
 
 .card-bottom{
   padding: 16px 22px;
   border-top: 1px solid rgba(255,255,255,0.10);
   text-align: center;
+
+  background: rgba(0,0,0,0.16);
 }
 
-.card-link{ color: rgba(247,245,242,.86); }
-.card-link:hover{ color: var(--accent); }
+.card-link{
+  color: rgba(247,245,242,.88);
+  text-underline-offset: 3px;
+}
+.card-link:hover{
+  color: var(--accent);
+}
 
 /* =========================
    Responsive + Mobile optimization (desktop-first)
